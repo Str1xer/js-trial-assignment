@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<link href="./style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="mt-8 rounded-xl max-w-4xl mx-auto">
+        <div class="header">
+            <input placeholder="Введите задачу" id="input-form" type="text" class="form"/>
+            <button onclick="handleAddTask()" class="send-button">
+                Добавить
+            </button>
+        </div>
+        <div class="sub-menu">
+            <button onclick="handleSelectOdd(this)" class="sub-button">Выбрать четные</button>
+            <button onclick="handleSelectEven(this)" class="sub-button">Выбрать нечетные</button>
+            <button onclick="handleRemoveFirst()" class="sub-button">Удалить первый</button>
+            <button onclick="handleRremoveLast()" class="sub-button">Удалить последний</button>
+        </div>
+        <div id="task-list" class="task-list">
+        </div>
+        <div id="task-list-completed" class="task-list">
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
